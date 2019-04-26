@@ -7,7 +7,7 @@ var canSpin;
 // slices (prizes) placed in the wheel
 var slices = 8;
 // prize names, starting from 12 o'clock going clockwise
-var slicePrizes = ["Discount 5 Baht", "Discount 10 Baht", "Share again", "Discount 5 Baht", "Discount 10 Baht", "Invite 2 friend to share", "Discount 5 Baht", "BAD LUCK!!!"];
+var slicePrizes = ["Special!! Get discount 20 Baht", "Discount 10 Baht", "Share again", "BAD LUCK!!!", "Discount 10 Baht", "Share again and tag 2 friends", "Discount 5 Baht", "Get discount 5 Baht"];
 // the prize you are about to w
 var prize;
 // text field where to show the prize
