@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Add time table</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="../text/css" href="index.css">
+    <style type="text/css">
+    	body{
+    		background-color: grey;
+    	}
+    	form{
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+    		border-bottom-left-radius: 10px;
+    		border-bottom-right-radius: 10px;
+    		background-color: orange;
+    	}
+    	label{
+    		margin-top-bottom-left-right: 10px;	
+    		color: black;
+    		font-size:16px;
+    	}
+    	input.form-control{
+    		background-color: #E3E3E3;
+    	}
+    </style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<dir class="container col-sm-8">
+	<form id="addForm">
+		<div class="form-group"><br>
+			<label for="nameSubject">Name of subject</label>
+			<input type="text" class="form-control" id="nameSubject" name="nameSubject" placeholder="Example: General Physics for Engineering Students II">
+		</div>
+		<div class="form-group">
+			<label for="codeSubject">Subject code</label>
+			<input type="text" class="form-control" id="codeSubject" name="codeSubject" placeholder="Example: PHY104">
+		</div>
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="timeSubjectStart">Date(Start)</label>
+				<input type="date" class="form-control" id="dateSubjectStart" name="dateSubjectStart" placeholder="Example: PHY104">
+			</div>
+			<div class="form-group col-sm-6">
+				<label for="timeSubjectEnd">Date(End)</label>
+				<input type="date" class="form-control" id="dateSubjectEnd" name="dateSubjectEnd" placeholder="Example: PHY104">
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="timeSubjectStart">Select time(Start)</label>
+				<input type="time" class="form-control" id="timeSubjectStart" name="timeSubjectStart" placeholder="Example: PHY104">
+			</div>
+			<div class="form-group col-sm-6">
+				<label for="timeSubjectEnd">Select time(End)</label>
+				<input type="time" class="form-control" id="timeSubjectEnd" name="timeSubjectEnd" placeholder="Example: PHY104">
+			</div>
+		</div>
+		<dir class="form-group" align="center">
+			<button class="btn btn-success btn-lg">Submit</button>
+		</dir><br>
+	</form>
+	<br>
+	<table class="table" id="tableResult">
+		<thead>
+		    <tr>
+		      <th>Name of subject</th>
+		      <th>Subject code</th>
+		      <th>Time-start</th>
+		      <th>Time-end</th>
+		      <th>Delete</th>
+		    </tr>
+	    </thead>
+	    <tbody>
+	    	
+	    </tbody>
+	</table>
+</dir>
+</body>
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="index.js"></script>
+</html>
