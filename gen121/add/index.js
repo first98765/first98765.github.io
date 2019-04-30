@@ -20,20 +20,19 @@ database.collection('subject').get().then((snapshot)=>{
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    database.collection('subject').add({
-        nameSubject:form.nameSubject.value,
-        codeSubject:form.codeSubject.value,
-        dateSubjectStart:form.dateSubjectStart.value,
-        dateSubjectEnd:form.dateSubjectEnd.value,
-        timeSubjectStart:form.timeSubjectStart.value,
-        timeSubjectEnd:form.timeSubjectEnd.value
-    });
-    form.nameSubject.value = '';
-    form.codeSubject.value = '';
-    form.dateSubjectStart.value = '';
-    form.dateSubjectEnd.value = '';
-    form.timeSubjectStart.value = '';
-    timeSubjectEnd.value = '';
+    if(form.nameSubject.value!=''||form.codeSubject.value!=''||form.dateSubjectStart.value!=''
+    ||form.dateSubjectEnd.value!=''||form.timeSubjectStart.value!=''||form.timeSubjectEnd.value!=''){
+        database.collection('subject').add({
+            nameSubject:form.nameSubject.value,
+            codeSubject:form.codeSubject.value,
+            dateSubjectStart:form.dateSubjectStart.value,
+            dateSubjectEnd:form.dateSubjectEnd.value,
+            timeSubjectStart:form.timeSubjectStart.value,
+            timeSubjectEnd:form.timeSubjectEnd.value
+        }).then(()=>location.reload(true));
+    }else{
+        alert("Don't be empty!");
+    }
 });
 
 function getdataSubject(doc){
@@ -56,6 +55,6 @@ function getdataSubject(doc){
 
     btn.addEventListener('click',(e)=>{
         let id = e.target.getAttribute('data-id');
-        database.collection('subject').doc(id).delete();
+        database.collection('subject').doc(id).delete().then(()=>location.reload(true));
     });
 }
