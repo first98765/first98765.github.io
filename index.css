@@ -1,0 +1,33 @@
+body {
+	background-color: #1B2631;
+}
+
+h1,h3,p {
+	color: white;
+}
+
+board{
+	background-color: #34495E;
+}
+
+socker_red{
+	background-color: red;
+	color: white;
+	line-height: normal;
+	vertical-align: middle;
+	text-align: center;
+	width: 50px;
+}
+
+socker_black{
+	background-color: black;
+	color: white;
+	line-height: normal;
+	vertical-align: middle;
+	text-align: center;
+	width: 50px;
+}
+
+score{
+	background-color: grey;
+}
