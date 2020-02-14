@@ -1,13 +1,9 @@
 body {
-	background-color: #1B2631;
+	background-color: #212121;
 }
 
 h1,h3,p {
 	color: white;
-}
-
-board{
-	background-color: #34495E;
 }
 
 socker_red{

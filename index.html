@@ -9,14 +9,21 @@
 		<script type="text/javascript" src="index.js"></script>
 		<title>Supakij Buasod</title>
         <link rel="stylesheet" type="text/css" href="index.css">
-        <ul class="nav justify-content-end" style="background-color: white">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="../resume">Resume</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link active" href="../">About me</a>
-		  </li>
-		</ul>
+        
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Supakij Buasod</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+		<form class="navbar-inline my-2 my-lg-0">
+		<a href="../resume" class="btn btn-outline-success my-2 my-sm-0" style="color: #fb8400;background-color: #262626"><b>Resume</b></a>
+		<a href="../" class="btn btn-outline-success my-2 my-sm-0" style="color: #fb8400;background-color: #262626"><b>About</b></a>
+		</form>
+		</div>
+		</nav>
+
 		<br>
 
 	</head>
@@ -28,9 +35,10 @@
 						<img src="img/me.jpg" width="90%" align="center">
 						<br><br>
 					</div>
-					<div class="col-sm-9">
-						<h1>Supakij Buasod</h1>
-						<p style="font-size: 20px">Computer Engineering</p>
+					<div class="col-sm-9" style="background-color: #262626;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+						<h1 style="margin-top: 10px;">Supakij Buasod</h1>
+						<pre style="font-size: 20px;color: white">Computer Engineering (Bachelor degree)</pre>
+						<pre style="font-size: 15px;color: white">King Mongkut’s University of Technology Thonburi</pre>
 						<hr style="background-color: white"> 
 						<p>Programing:
 							<pre style="color: white"> Website: HTML, PHP, JavaScript, React, NodeJS </pre>
@@ -52,7 +60,7 @@
 								<a href="https://instagram.com/frstpkj" style="margin-left: 10px;">
 									<img src="https://d3frsattnbx5l6.cloudfront.net/1532688803714-instagram-94fd767f257b.png" height="50px;"></a>
 						</div><br>
-						<div class="col-sm-12 row">
+						<div class="col-sm-12 row" style="margin-bottom: 20px;">
 							<a href="https://github.com/first98765">
 									<img src="https://i.kym-cdn.com/photos/images/original/001/704/393/8d2.png" height="50px;" style="background-color: white"></a>
 						</div>
@@ -61,7 +69,74 @@
 				<div class="col-sm-12"><br>
 					<a onclick="popPicture()" class="btn btn-info btn-sm" style="width: 100%">More</a>
 				</div>
-				<div id="myDIV" style="display: none;"> <br><img src="Resume.png" width="100%"></div>
+				<div id="myDIV" style="display: none;"> <br>
+					<div class="col-sm-12 row" align="center">
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src="../img/about/rdc/rdc_paper.png" class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">RDC2016</h5>
+							    <p class="card-text">1 in 8 team of Thaiand <br> Robot Design Contest 2016 <br>@Chulalongkorn University</p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src="../img/about/chevron/chevron_paper.png" class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">Chevron</h5>
+							    <p class="card-text">Popular vote <br> Chevron enjoy science 2017 <br>@The Street Ratchada</p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src="../img/About/KB/kb_info2.png" class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">Kidbright hackathon 2019</h5>
+							    <p class="card-text">Join an event.</p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div>
+					</div>
+
+					<div class="col-sm-12 row" align="center">
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src="../img/about/RMUTL/rmutl.png" class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">Students' union</h5>
+							    <p class="card-text">President of the Student Union<br>@College of Integrated Science and Technology Lanna : RMUTL</p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div>
+						<!-- <div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src=".." class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">---</h5>
+							    <p class="card-text"></p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div>
+						<div class="col-sm-4">
+							<div class="card" style="width: 18rem;background-color: #262626;color: #fb8400;">
+							  <img src=".." class="card-img-top" alt="..." style="height: 400px;width: 100%">
+							  <div class="card-body">
+							    <h5 class="card-title">---</h5>
+							    <p class="card-text"></p>
+							    <a href="#" class="btn btn-primary">Read more..</a>
+							  </div>
+							</div><br>
+						</div> -->
+					</div>
+				</div>
+				<br>
 			</div>
 		</div>
 		<!-- Optional JavaScript -->
